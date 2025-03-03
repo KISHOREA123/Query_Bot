@@ -1,0 +1,20 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_certificate_info
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you with government certificates?"
+  
+  utter_goodbye:
+    - text: "Goodbye! Let me know if you need any more help."
+
+actions:
+  - action_fetch_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
