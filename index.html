@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryGovChatbot</title>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>QueryGov: Hassle-Free Chatbot for Government Certificates</h2>
+        <div class="certificate-grid">
+            <div class="certificate-card">Birth Certificate</div>
+            <div class="certificate-card">Death Certificate</div>
+            <div class="certificate-card">Marriage Certificate</div>
+            <div class="certificate-card">Domicile Certificate</div>
+            <div class="certificate-card">Income Certificate</div>
+            <div class="certificate-card">Driving License</div>
+            <div class="certificate-card">Passport</div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <h2>Chat with QueryGov</h2>
+        <div id="chat-box">
+            <div id="webchat"></div>
+            <input type="text" id="user-input" placeholder="Type your query here..." autofocus>
+            <button id="send-button">Send</button>
+            <div class="typing-indicator" id="typing">QueryGov is typing<span class="dots">...</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

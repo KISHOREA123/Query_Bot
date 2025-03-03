@@ -1,0 +1,25 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+
+  - intent: ask_certificate_info
+    examples: |
+      - What documents are needed for a birth certificate?
+      - How much does a birth certificate cost?
+      - Where can I apply for a birth certificate?
+      - Who issues birth certificates in Tamil Nadu?
+      - How to get a birth certificate if I lost mine?
+      - Is there a deadline for birth certificate registration?
+      - Can I apply online for a birth certificate?
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - see you later
+      - goodbye
