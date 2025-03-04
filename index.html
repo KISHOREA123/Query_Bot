@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QueryGovChatbot</title>
     <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Sidebar for Chat History -->
     <div class="sidebar">
+      <div class="sidebar-header">
         <h2>Chat History</h2>
-        <ul id="history-list">
-            <li>No previous queries</li>
-        </ul>
+        <i class="fas fa-search search-icon"></i>
+        <!-- Search Icon -->
+      </div>
+      <ul id="history-list">
+        <li>No previous queries</li>
+      </ul>
     </div>
 
     <div class="container">
-        <h2>QueryGov: Hassle-Free Chatbot for Government Certificates</h2>
-        <div class="certificate-grid">
-            <div class="certificate-card">Birth Certificate</div>
-            <div class="certificate-card">Death Certificate</div>
-            <div class="certificate-card">Marriage Certificate</div>
-            <div class="certificate-card">Domicile Certificate</div>
-            <div class="certificate-card">Income Certificate</div>
-            <div class="certificate-card">Driving License</div>
-            <div class="certificate-card">Passport</div>
-        </div>
+      <h2>QueryGov: Hassle-Free Chatbot for Government Certificates</h2>
+      <div class="certificate-grid">
+        <div class="certificate-card">Birth Certificate</div>
+        <div class="certificate-card">Death Certificate</div>
+        <div class="certificate-card">Marriage Certificate</div>
+        <div class="certificate-card">Domicile Certificate</div>
+        <div class="certificate-card">Income Certificate</div>
+        <div class="certificate-card">Driving License</div>
+        <div class="certificate-card">Passport</div>
+      </div>
     </div>
 
     <div class="chat-container">
-        <h2>Chat with QueryGov</h2>
-        <div id="chat-box">
-            <div id="webchat"></div>
-            <input type="text" id="user-input" placeholder="Type your query here..." autofocus>
-            <button id="send-button">Send</button>
-            <div class="typing-indicator" id="typing">QueryGov is typing<span class="dots">...</span></div>
+      <h2>What can I help with?</h2>
+      <div id="chat-box">
+        <div id="webchat"></div>
+        <div class="input-container">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Type your query here..."
+            autofocus
+          />
+          <i class="fas fa-paper-plane send-icon" id="send-icon"></i>
         </div>
+        <div class="typing-indicator" id="typing">
+          QueryGov is typing<span class="dots">...</span>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

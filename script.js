@@ -1,10 +1,11 @@
-document.getElementById("send-button").addEventListener("click", function() {
-    let userInput = document.getElementById("user-input").value;
-    if (userInput.trim() !== "") {
-        addToHistory(userInput);
-        document.getElementById("user-input").value = "";
+document.getElementById("send-icon").addEventListener("click", function() {
+    let userInput = document.getElementById("user-input").value.trim();
+    if (userInput !== "") {
+        console.log("User message:", userInput); // Replace with your chatbot function
+        document.getElementById("user-input").value = ""; // Clear input
     }
 });
+
 
 function addToHistory(query) {
     let historyList = document.getElementById("history-list");
